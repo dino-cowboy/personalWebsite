@@ -1,0 +1,33 @@
+<%- include('header.ejs') %>
+<%- include('cover-page.ejs') %>
+
+<section class="sourcesPage py-3 ">
+    <div class="px-4 text-center">
+        <h1 class="display-5 text-body-emphasis py-4">Sources Used in the Building of This Site</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="mb-4 py-2">
+            dino clipart PNG Designed By  from https://pngtree.com/freepng/pterodactyl-cartoon-design-illustration_5347907.html?sol=downref&id=bef
+          </p>
+          <p class="mb-4 py-2">
+            dino clipart PNG Designed By  from https://pngtree.com/freepng/stegosaurus-cartoon-design-illustration_5347910.html?sol=downref&id=bef
+          </p>
+          <p class="mb-4 py-2">
+            volcano clipart PNG Designed By  from https://pngtree.com/freepng/volcano-cartoon-design-illustration_5347932.html?sol=downref&id=bef
+          </p>
+        </div>
+        <h1 class="display-5 text-body-emphasis py-4">THANK YOU !</h1>
+      </div>
+</section>
+
+
+<script>
+    const sourceSection = document.querySelector('.sourcesPage'); 
+    if (sourceSection) {
+        sourceSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  </script>
+
+<%- include('footer.ejs') %>

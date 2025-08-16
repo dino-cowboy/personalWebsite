@@ -1,0 +1,182 @@
+<%- include('header.ejs') %>
+<%- include('cover-page.ejs') %>
+
+
+<section class="projectPage py-5">
+    <h2 class="pt-3 text-center">My Projects</h2>
+    <div class="album py-5">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class= "text-white">
+                  <button type="button" class="btn p-0 border-0 " data-bs-toggle="modal" data-bs-target="#friendsofMSFModal">
+                    <img class="card-img enhance" src="/assets/friendsofMSF.png" alt="Card image">
+                    <div class="card-img-overlay">
+                  </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class= "text-white">
+                  <button type="button" class="btn p-0 border-0 " data-bs-toggle="modal" data-bs-target="#solderFanModal">
+                    <img class="card-img enhance" src="/assets/solderFan.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                  </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class= "text-white">
+                  <button type="button" class="btn p-0 border-0 " data-bs-toggle="modal" data-bs-target="#pinItModal">
+                    <img class="card-img enhance" src="/assets/pinIt.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                  </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class= "text-white">
+                  <button type="button" class="btn p-0 border-0 " data-bs-toggle="modal" data-bs-target="#researchModal">
+                    <img class="card-img enhance" src="/assets/URAP.png" alt="Card image">
+                    <div class="card-img-overlay">
+                  </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</section>
+
+
+<div class="modal fade" id="friendsofMSFModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">About the Friends of MSF Website</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>As the Tech Coordinator for Friends of MSF at UTD, I wanted to boost our presence on campus, so I 
+          built a website to help with recruitment. The goal was to give potential members an easy way to learn 
+          about what we stand for and how they could get involved. I created the site using Node.js, HTML, CSS, 
+          and Bootstrap. The website was an overall success as everyone in the club used it during recruiting events 
+          to share info and connect with students. Along the way, I learned a lot about web design, frameworks, 
+          and working with a real client to bring their vision to life. You can view the site by clicking the button 
+          below !</div>
+      <div class="modal-footer">
+        <a target="_blank" href="https://www.friendsofmsfatutd.org/">
+        <button type="button" class="btn btn-dark">Go To Site</button>
+        </a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="solderFanModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">About the solderFan Wiki</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> The SolderFan Wiki was a fun project where I repurposed an old desk fan into a solder smoke absorber.
+           I used it as an opportunity to learn CAD design with Shapr3D and created a custom model to house a carbon
+            filter. The final product worked really well, it pulled in solder smoke effectively and gave new life to 
+            something I wasn’t using anymore. Along the way, I learned how to navigate a new design tool, understood
+             what goes into making functional products, and saw how easy it can be to bring an idea to life with the
+              help of companies that support custom manufacturing. The wiki and 3D model can be viewed using the button below !
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a target="_blank" href="https://github.com/dino-cowboy/solderFan/wiki">
+        <button type="button" class="btn btn-dark">Go To Wiki</button>
+        </a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="pinItModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">About PinIt</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>PinIt is a website that my group and I made during my first hackathon at HackUTD 2024.
+          Our project's goal was to implement Pinata file API into any application of our choosing. My group decided
+          to pursuit a website that will allow anybody to search for volunteer opportunities as well as allow organizations to upload their
+          own opportunities for people to apply to. We were only able to get the front end development of the home page finished by the end of the hackathon, but I wanted
+          to take it as challenge to actually implement Pinata API into the backend of our website. Clicking the button below will take you to the final 
+          result of my group's work and I will be putting in extra work to bring the site to life !   
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a target="_blank" href="https://pinit-1r2l.onrender.com/">
+        <button type="button" class="btn btn-dark">Go To Site</button>
+        </a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="researchModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">About my UT Dallas Undergraduate Research Apprenticeship</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> The Undergraduate Research Apprenticeship Program is a UTD offered opportunity that allows undergraduate students to
+           join research groups in the various departments within the university. My research group was in the material sciences department
+           and we studied the effects that changing the polarity of LEDS from Ga-polar to N-polar has on the carrier concentrations, emission spectrum,
+           IV curve, and the band diagrams. The goal of our research was to see if there was any improvement in changing the polarity of an LED, then move
+           onto the polarity of photo-detectors with hopes of eventually improving fibre optic cables transmission and receiving speeds. By the end of my 
+           program, I created a research poster to present to faculty and staff at a symposium. Clicking the button below will take you to my research poster !
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a target="_blank" href="https://docs.google.com/presentation/d/1klVbKQ8NuDOBbXgzSuGQMpLj_fTu-kDf/edit?usp=sharing&ouid=101748708824437164568&rtpof=true&sd=true">
+        <button type="button" class="btn btn-dark">Go To Poster</button>
+        </a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%-include('footer.ejs') %>
+
+<script>
+  const projectsButton = document.querySelector('.projects');
+  const aboutButton = document.querySelector('.about');
+  const contactButton = document.querySelector('.contact');
+  const bottomSection = document.querySelector('.projectPage'); 
+  aboutButton.classList.remove('active');
+  projectsButton.classList.add('active');
+  contactButton.classList.remove('active');
+
+  bottomSection.scrollIntoView({
+  behavior: "smooth", // Optional: Add smooth scrolling
+  block: "start" // Optional: Scroll to the top of the element
+  });
+  
+</script>

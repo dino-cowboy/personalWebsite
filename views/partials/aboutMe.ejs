@@ -1,0 +1,33 @@
+<section class="aboutPage py-3 ">
+    <div class="px-4 text-center">
+        <img class="d-block mx-auto mb-4 rounded-circle" src="/assets/me.png" alt="Pic of Juan" width="250" height="250">
+        <h1 class="display-5 fw-bold text-body-emphasis hover-grad-txt">Hello, I'm Juan!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 hover-grad-txt py-3">I am a Computer Engineering student at the 
+            University of Texas at Dallas with a passion for web development, software 
+            engineering, and hardware design. I am always eager to learn and grow as an 
+            engineer. I am working towards a minor in Entrepreneurship and certificates in 
+            Quantum Information and Semiconductor Technology. Feel free to reach out to me 
+            via email or LinkedIn!</p>
+        </div>
+
+        <a target="_blank" class = "resume" href="https://1drv.ms/w/c/a68ceecda0da51fa/EVitRAEePWBNre5r6V3cdF8BKY9gfXnSOYpi7NyJOhqNDQ?e=e0GnyJ"> <h2> Click Here to See My Resume ! </h2> </a>
+
+      </div>
+</section>
+
+<script>
+  const projectsButton = document.querySelector('.projects');
+  const aboutButton = document.querySelector('.about');
+  const contactButton = document.querySelector('.contact');
+  aboutButton.classList.add('active');
+  projectsButton.classList.remove('active');
+  contactButton.classList.remove('active');
+  const endSection = document.querySelector('.aboutPage'); 
+
+  endSection.scrollIntoView({
+  behavior: "smooth", // Optional: Add smooth scrolling
+  block: "start" // Optional: Scroll to the top of the element
+  });
+
+</script>

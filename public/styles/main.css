@@ -1,0 +1,250 @@
+.cover-Page{
+    display: block;
+    background-color: cornflowerblue;
+    height: 82vh;
+    padding-top: 30vh;
+    position: relative;
+    overflow: visible;
+}
+
+.volcano {
+  position: absolute;
+  bottom: -1.11rem;         
+  left: 2rem;
+  width: 9rem;
+  max-width: 12rem;
+  min-width: 8rem;
+  height: auto;
+  pointer-events: none;
+}
+
+.dino {
+  position: absolute; 
+  bottom: -2.13rem;
+  left: auto;
+  right: 1rem;
+  width: 10rem;
+  max-width: 12rem;
+  min-width: 8rem;
+  height: auto;
+}
+
+
+.pterrydactyl{
+    position: absolute;
+    width: 10rem;
+    min-width: 8rem;
+    max-width: 12rem;
+    top: 3%;
+    left: 33%;
+}
+
+
+
+.caveat-font {
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.myName{
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    justify-content: center;
+}
+
+.myMajor{
+    color: white;
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.aboutPage{
+    background-color: #CDC1FF; 
+    color: black;
+}
+
+.projectPage{
+    background-color: #9ceec9;
+}
+.contactPage{
+    background-color: #FEC9A7 ;
+}
+
+.footer{
+    background-color: #FFFF80 !important;
+}
+
+.endPage{
+  scroll-margin-top: -10000px;
+}
+
+.shakyText:hover{
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(0px); }
+  25% { transform: translate(5px); }
+  50% { transform: translate(0px); }
+  75% { transform: translate(5px); }
+  100% { transform: translate(0px); }
+}
+
+.bouncyText:hover{
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+
+.spin:hover {
+    animation: spin-animation 0.75s infinite;
+    display: inline-block;
+  }
+@keyframes spin-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }
+
+  .grow { 
+    transition: all .2s ease-in-out; 
+  }
+  
+  .grow:hover { 
+    transform: scale(1.2); 
+  }
+
+
+  .shrink { 
+    transition: all .2s ease-in-out; 
+  }
+  
+  .shrink:hover { 
+    transform: scale(.5); 
+  }
+
+nav{
+    background-color: #FFCCEA;
+    color: black;
+    font-size: large;
+}
+
+.rounded-circle{
+    border: 5px solid black;
+}
+
+
+@property --a {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #000000;
+}
+
+@property --b {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #000000;
+}
+
+.hover-grad-txt {
+    transition: --a 0.75s, --b 0.25s;
+    font-size: 100px;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--a), var(--b));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hover-grad-txt:hover {
+    --a:#d40562;
+    --b: #6337c2;
+}
+
+.active{
+  font-weight: 600 !important;
+}
+
+.hidden{
+  border: none;
+  background: none;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+}
+
+.contactContainer{
+    background-color: #fff6f6;
+
+}
+
+.inputBox{
+    margin-left: 100px;
+}
+
+label{
+  color: black;
+}
+
+.name{
+  position: absolute;
+  display: block;
+}
+.email{
+  position: absolute;
+  margin-left: 50px;
+}
+
+.message{
+  position: relative;
+  margin-right: 920px;
+}
+
+.text-body-secondary{
+  color: #000000;
+  font-weight: 500;
+}
+
+.sourcesPage{
+  background-color: #FAF8F6;
+}
+
+.resume{
+  text-decoration: none; 
+  color: #000000;
+}
+
+.card-img:hover, .card:hover{
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.card, .card-img{
+  padding: 0px;
+}
