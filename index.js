@@ -21,7 +21,7 @@ app.post('/send-email', (req, res) => {
     // Set up Nodemailer transport
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: process.env.PORT,
+        port: process.env.SMTP_PORT,
         secure: true, 
         auth: {
           user: "juan.basilio.orozco@gmail.com",
