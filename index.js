@@ -1,8 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
 import nodemailer from "nodemailer";
+import env from "dotenv";
 
-
+env.config();
 const app = express();
 const port = 3000;
 
