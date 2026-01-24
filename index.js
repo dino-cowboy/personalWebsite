@@ -88,5 +88,3 @@ app.get("/sources", (req, res) =>{
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
-
-why am I geting internal server error on contact and project page
