@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import nodemailer from "nodemailer";
 import env from "dotenv";
+import axios from "axios";
 
 env.config();
 const app = express();
