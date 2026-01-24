@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import nodemailer from "nodemailer";
 import env from "dotenv";
+import axios from "axios";
 
 env.config();
 const app = express();
@@ -47,13 +48,6 @@ app.post('/send-email', async (req, res) => {
         },
       });
       
-    transporter.verify(function (error, success) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Server is ready to take our messages");
-    }
-    });
   
         // send mail with defined transport object
         const info = await transporter.sendMail({
@@ -73,13 +67,14 @@ app.post('/send-email', async (req, res) => {
   });
 
   app.get("/projects", (req, res) =>{
-        res.render("contactUs.ejs", {
-        siteKey: process.env.RECAPTCHA_SITE_KEY
-    });
+        res.render("partials/projects.ejs");
 });
 
 app.get("/contact", (req, res) =>{
-    res.render("partials/contactMe.ejs");
+    res.render("partials/contactMe.ejs", {
+      siteKey: process.env.RECAPTCHA_SITE_KEY
+
+    });
 });
 
 app.get("/about", (req, res) =>{
@@ -93,3 +88,5 @@ app.get("/sources", (req, res) =>{
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+why am I geting internal server error on contact and project page
